@@ -79,7 +79,8 @@ int find (Set s, int i) {
   while (s != NULL) {
     if (s->val == i) {
       return 1;
-    } 
+    }  
+    s = s->next;
   }
   return 0; 
 }
