@@ -103,15 +103,6 @@ void printSet (Set s) {
 	printf("\n");
 }
 
-int validSet(Set s) {
-  while (s != NULL) {
-    if (find(s->next, s->val)) {
-      return 0;
-    }
-    s = s->next; 
-  }
-  return 1; 
-}
 
 
 
